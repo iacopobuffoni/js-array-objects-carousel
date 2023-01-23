@@ -23,3 +23,15 @@
     font-weight: bold;
     border-radius: 10px;
 }
+
+.title {
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    top: 100%;
+    bottom: 0;
+    overflow: hidden;
+    text-align: end;
+}
