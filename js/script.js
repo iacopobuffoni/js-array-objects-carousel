@@ -23,7 +23,6 @@ const images = [
 ];
 
 const _Slides = document.querySelector('.slides');
-console.log(_Slides);
 let _ActiveSlide = 0;
 
 for (let i = 0; i < images.length; i ++) {
@@ -38,7 +37,6 @@ const _AllSlides = document.querySelectorAll('.slides img');
 const _AllTitles = document.querySelectorAll('.title');
 _AllSlides[_ActiveSlide].classList.remove('hidden');
 _AllTitles[_ActiveSlide].classList.remove('hidden');
-console.log(_AllSlides);
 
 const _Previous = document.getElementById('back');
 const _Next = document.getElementById('next');
@@ -47,7 +45,6 @@ _Next.addEventListener ('click',
 
     function () {
 
-        console.log(_AllSlides[_ActiveSlide])
         _AllSlides[_ActiveSlide].classList.add('hidden');
         _AllTitles[_ActiveSlide].classList.add('hidden');
 
@@ -71,7 +68,6 @@ _Previous.addEventListener ('click',
 
     function () {
         
-        console.log(_AllSlides[_ActiveSlide])
         _AllSlides[_ActiveSlide].classList.add('hidden');
         _AllTitles[_ActiveSlide].classList.add('hidden');
 
